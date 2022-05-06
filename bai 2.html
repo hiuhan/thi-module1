@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [2,4,6,8,5,7];
+    let x=parseInt(prompt("nhập vào số x"))
+    function tryRemoteFromArray(x,arr){
+        for (let i = 0; i < arr.length; i++) {
+            if (x===arr[i]){
+                arr.splice(i,1);
+            }
+        }
+        console.log(arr)
+    }
+    tryRemoteFromArray(x,arr);
+</script>
+</body>
+</html>
